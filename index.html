@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drill 2: Working on Strings</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+          background: linear-gradient(to top, #1dcfc0, #cf1d6d);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+      }
+      input, button {
+        margin-top: 10px;
+        padding: 8px;
+        display: block;
+      }
+      button {
+            width: 47%;
+            padding: 10px;
+            background-color: #1eb082;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+      }
+        #submit-btn:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+      }
+      #output {
+        margin-top: 20px;
+        white-space: pre-wrap;
+        background: #f3f3f3;
+        padding: 15px;
+        border-radius: 5px;
+      }
+      .col-md-8{
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <br>
+      <br> 
+        <div class="col-md-8">
+          <h1>📇 String Showcase: My Basic Info</h1>
+
+          <label for="name">Name:</label>
+          <input id="name" type="text" />
+          <br>
+          <label for="age">Age:</label>
+          <input id="age" type="number" />
+          <br>
+          <label for="school">School:</label>
+          <input id="school" type="text" />
+          <br>
+          <button id="submit-btn">Generate Message</button>
+
+          <div id="output"></div>
+
+            <py-config>
+              [[fetch]]
+              files = ["main.py"]
+            </py-config>
+        </div>
+    </center>
+
+    <script type="py" src="./main.py"></script>
+
+  </body>
+</html>
